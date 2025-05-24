@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<!-- 定义一个可滚动的视图区域，允许垂直滚动 -->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <!-- 页面内容容器 -->
+  <view class="container">
+    <!-- 用户信息区域 -->
+    <view class="userinfo">
+      <!-- 如果支持昵称输入组件且用户信息未填写 -->
+      <block wx:if="{{canIUseNicknameComp && !hasUserInfo}}">
+        <!-- 头像选择按钮，点击后触发 onChooseAvatar 方法 -->
+        <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+          <!-- 显示用户头像，初始为默认头像 -->
+          <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+        </button>
+        <!-- 昵称输入区域 -->
+        <view class="nickname-wrapper">
+          <!-- 昵称标签 -->
+          <text class="nickname-label">昵称</text>
+          <!-- 昵称输入框，输入内容变化时触发 onInputChange 方法 -->
+          <input type="nickname" class="nickname-input" placeholder="请输入昵称" bind:change="onInputChange" />
+        </view>
+      </block>
+
+      <!-- 如果不支持昵称输入组件且用户信息未填写 -->
+      <block wx:elif="{{!hasUserInfo}}">
+        <!-- 如果支持 getUserProfile，显示按钮以获取用户信息 -->
+        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+        <!-- 如果不支持 getUserProfile，提示用户升级基础库 -->
+        <view wx:else> 请使用2.10.4及以上版本基础库 </view>
+      </block>
+
+      <!-- 如果用户信息已填写 -->
+      <block wx:else>
+        <!-- 显示用户头像，点击后跳转到日志页面 -->
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <!-- 显示用户昵称 -->
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+
+    <!-- 用户 motto 区域 -->
+    <view class="usermotto">
+      <!-- 显示 motto 内容 -->
+      <text class="user-motto" style="position: relative; left: 0rpx; top: -35rpx;font-size: 14px">{{motto}}</text>
+    </view>
+  </view>
+</scroll-view>

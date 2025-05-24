@@ -1,0 +1,48 @@
+/* pages/Material/Material.wxss */
+.form-section {
+    padding: 40rpx;
+  }
+  
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40rpx;
+  }
+  
+  .label {
+    font-size: 28rpx;
+    color: #333;
+    margin-bottom: 16rpx;
+  }
+  
+  .input {
+    height: 80rpx;
+    border: 1rpx solid #ddd;
+    border-radius: 12rpx;
+    padding: 0 20rpx;
+    font-size: 28rpx;
+    background-color: #fff;
+  }
+  
+  .avatar-section {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .avatar {
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+    border: 2rpx solid #eee;
+  }
+  
+  .submit-button {
+    background-color: #68dab7;
+    color: #fff;
+    font-size: 30rpx;
+    border-radius: 12rpx;
+    padding: 20rpx 0;
+    text-align: center;
+  }
+  

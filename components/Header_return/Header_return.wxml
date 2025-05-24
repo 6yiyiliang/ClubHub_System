@@ -1,0 +1,6 @@
+<view class="header">
+  <view class="header-left" bindtap="onReturn">
+    <image src="../../pages/icon/navigation/return.png" class="return-icon" ></image>
+  </view>
+  <view class="header-title" >{{title}}</view>
+</view>

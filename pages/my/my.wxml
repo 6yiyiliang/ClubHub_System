@@ -1,0 +1,15 @@
+<!--pages/my/my.wxml-->
+<header-return title="我的社团"></header-return>
+
+<view class="club-container">
+  <block wx:for="{{myClubs}}" wx:key="id">
+    <view class="club-card">
+      <image style="position: relative; left: -2rpx; top: 16rpx" class="club-logo" src="{{item.logo}}" />
+      <view class="club-info">
+        <text class="club-name">{{item.name}}</text>
+        <text class="club-position">{{item.position}}</text>
+        <text class="club-desc">{{item.description}}</text>
+      </view>
+    </view>
+  </block>
+</view>

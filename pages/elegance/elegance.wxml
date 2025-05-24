@@ -1,0 +1,89 @@
+<!--pages/elegance/elegance.wxml-->
+<header-return title="社团风采"></header-return>
+
+<view class="good-hot">
+
+    <text style="font-weight: bold; font-size: 32rpx;">青年志愿者协会</text>
+
+    <scroll-view class="scroll-x" scroll-x>
+
+    <view>
+    <view class="good-item">
+            <image src="../../pages/icon/slide/three_1.jpg" mode=""/>
+    </view>
+    </view>
+
+    <view>
+    <view class="good-item">
+        <image src="../../pages/icon/slide/three_6.jpg" mode=""/>
+    </view>
+    </view>
+
+    <view>
+    <view class="good-item">
+        <image src="../../pages/icon/slide/three_3.jpg" mode=""/>
+    </view>
+    </view>
+
+  </scroll-view>
+  
+</view>
+
+
+<view class="good-hot">
+
+    <text style="font-weight: bold; font-size: 32rpx;">计算机协会</text>
+
+    <scroll-view class="scroll-x" scroll-x>
+
+    <view>
+    <view class="good-item">
+            <image src="../../pages/icon/slide/cs3.jpg" mode=""/>
+    </view>
+    </view>
+
+    <view>
+    <view class="good-item">
+            <image src="../../pages/icon/slide/cs4.jpg" mode=""/>
+    </view>
+    </view>
+
+    <view>
+    <view class="good-item">
+            <image src="../../pages/icon/slide/cs1.jpg" mode=""/>
+    </view>
+    </view>
+
+    </scroll-view>
+  
+</view>
+
+
+<view class="good-hot">
+
+<text style="font-weight: bold; font-size: 32rpx;">学生会</text>
+
+<scroll-view class="scroll-x" scroll-x>
+
+<view>
+<view class="good-item">
+        <image src="../../pages/icon/e/e_1.jpg" mode=""/>
+</view>
+</view>
+
+<view>
+<view class="good-item">
+        <image src="../../pages/icon/e/e_4.jpg" mode=""/>
+
+</view>
+</view>
+
+<view>
+<view class="good-item">
+        <image src="../../pages/icon/e/e_2.jpg" mode=""/>
+</view>
+</view>
+
+</scroll-view>
+
+</view>

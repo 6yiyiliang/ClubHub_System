@@ -1,0 +1,28 @@
+<!--components/Navigation/index.wxml-->
+<view class="navigation-wrap">
+  <view class="navigation-empty-wrap">
+    <view class="empty-box"></view>
+    <view class="bottom-safet-area" style="height: {{emptyHeight}}rpx;"></view>
+  </view>
+  <view class="fixed-nav-wrap">
+    <view class="shadow-box">
+      <view class="middle-circle"></view>
+    </view>
+    <view class="fixed-nav-content">
+      <view class="table">
+	<view class="cell {{item.id===navId?'active':''}}" 
+          wx:for="{{navList}}" 
+          wx:key="index" 
+          data-id="{{item.id}}" 
+          bind:tap="jump2Event">
+      <!-- 图标部分 -->
+      <image wx:if="{{item.id === navId}}" src="{{item.activeIcon}}" mode="aspectFill" class="icon {{item.id === -1 ? 'large-icon' : ''}}" />
+      <image wx:else="{{item.icon}}" src="{{item.icon}}" mode="aspectFill" class="icon {{item.id === -1 ? 'large-icon' : ''}}" />
+      <!-- 文字部分 -->
+      <view>{{item.name}}</view>
+	</view>
+</view>
+    </view>
+    <view class="bottom-safet-area" style="height: {{emptyHeight}}rpx;"></view>
+  </view>
+</view>

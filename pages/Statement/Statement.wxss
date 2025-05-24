@@ -1,0 +1,54 @@
+/* pages/Statement/Statement.wxss */
+.container {
+    padding: 32rpx;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+  }
+  
+  .statement-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20rpx;
+    margin-top: 20rpx;
+  }
+  
+  .statement-item {
+    background-color: #ffffff;
+    border-radius: 20rpx;
+    padding: 24rpx;
+    box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item-name {
+    font-size: 30rpx;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .item-date {
+    font-size: 26rpx;
+    color: #999;
+    margin-top: 8rpx;
+  }
+  
+  .right {
+    font-size: 30rpx;
+    font-weight: 600;
+  }
+  
+  .income {
+    color: #4caf50; /* 绿色 */
+  }
+  
+  .expense {
+    color: #f44336; /* 红色 */
+  }
+  

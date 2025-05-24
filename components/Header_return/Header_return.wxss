@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    align-items: center;
+    height: 174rpx;
+    padding: 0 20rpx;
+    background-color: #ffffff;
+    border-bottom: 1rpx solid #e5e5e5;
+  }
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  .return-icon {
+    width: 92rpx; height: 78rpx; display: block; box-sizing: border-box; left: -22rpx; top: 46rpx; position: relative
+  }
+  .header-title {
+    flex: 1;
+    text-align: center;
+    font-size: 33rpx;
+    color: #000000;
+    position: relative; 
+    left: -36rpx; 
+    top: 46rpx
+  }

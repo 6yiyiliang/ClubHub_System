@@ -1,0 +1,54 @@
+<header-return title="关于本系统"></header-return>
+
+<view class="system-container">
+  <!-- 系统Logo和名称 -->
+  <view class="header-section">
+    <image class="system-logo" src="../../pages/icon/logo.jpg"></image>
+    <text class="system-name">社活智管</text>
+    <text class="system-version">v1.0.0</text>
+  </view>
+
+  <!-- 系统简介卡片 -->
+  <view class="info-card">
+    <view class="card-title">
+      <image class="title-icon" src="../../pages/icon/s.png"></image>
+      <text>系统简介</text>
+    </view>
+    <view class="card-content">
+      <text>「社活智管」是一款专为高校社团管理设计的微信小程序，集社团展示、活动管理、成员交流、积分统计等功能于一体，帮助学校社团实现数字化管理，提升社团活动组织效率，丰富校园文化生活。</text>
+    </view>
+  </view>
+
+  <!-- 功能特点 -->
+  <view class="info-card">
+    <view class="card-title">
+      <image class="title-icon" src="../../pages/icon/function.png"></image>
+      <text>功能特点</text>
+    </view>
+    <view class="feature-list">
+      <view class="feature-item" wx:for="{{features}}" wx:key="id">
+        <image class="feature-icon" src="{{item.icon}}"></image>
+        <view class="feature-text">
+          <text class="feature-title">{{item.title}}</text>
+          <text class="feature-desc">{{item.desc}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 开发者信息 -->
+  <view class="info-card developer-info">
+    <view class="card-title">
+      <image class="title-icon" src="../../pages/icon/developer.png"></image>
+      <text>开发者</text>
+    </view>
+    <view class="developer-content">
+      <image class="team-avatar" src="../../pages/icon/me/my.jpg"></image>
+      <view class="developer-meta">
+        <text>珠海科技学院 刘漪靓</text>
+        <text>联系邮箱：LylOut100k@outlook.com</text>
+        <text>©2025 版权所有</text>
+      </view>
+    </view>
+  </view>
+</view>

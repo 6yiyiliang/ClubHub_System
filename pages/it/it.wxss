@@ -1,0 +1,68 @@
+/* pages/it/it.wxss */
+page {
+    background-color: #f5f5f5; /* 浅灰色背景 */
+    height: 100%;
+    width: 100%;
+}
+.message-container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    width: 95%;
+    min-height: 60px; /* 让容器至少有一定的高度 */
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px; 
+    margin: 8px auto; 
+}
+.message {
+    display: flex;
+    align-items: flex-start; /* 头像和内容顶部对齐 */
+    margin-bottom: 10px;
+    width: 620rpx;
+    padding-bottom: 6px;
+    margin-top: 15px; /* 增加上边距，让元素下移 */
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.message-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.sender {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 39rpx;
+    color: rgb(94, 94, 94);
+}
+.content {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+.p-container {
+    font-weight: bold; /* 字体加粗 */
+    font-size: 16px;   /* 字体大小 */
+    margin-bottom: 20rpx; /* 标题与正文的间距 */
+}
+.text-container {
+    background-color: rgb(255, 255, 255); /* 背景颜色 */
+    margin: 13px; /* 外边距，增加容器与其他元素的距离 */
+    padding: 20px; /* 内边距，增加内容与容器边缘的距离 */
+    border-radius: 13px; /* 圆角，使容器边角变圆滑 */
+}
+.content-text .paragraph {
+    display: block; /* 让每段独占一行 */
+    text-indent: 2em; /* 每段首行缩进 2 个字符宽度 */
+    margin-bottom: 20rpx; /* 段与段之间的间距 */
+}
+.photo{
+    margin-top: 15rpx;
+}
+.q{
+    text-indent: 1.3em; /* 正文部分首行缩进 2 个字符宽度 */
+    margin: 19rpx;
+}

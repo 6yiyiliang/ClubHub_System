@@ -1,0 +1,27 @@
+<!-- components/Header/index.wxml -->
+<view class="header-wrap">
+  <!-- 占位块，用于在页面顶部预留空间，避免内容被顶部固定导航栏遮挡 -->
+  <view class="empty-header-wrap">
+    <!-- 导航栏占位块，高度由 navBarHeight 决定 -->
+    <view class="nav-bar" style="height: {{navBarHeight}}px;"></view>
+    <!-- 额外的空白占位块，可根据需要调整 -->
+    <view class="empty-box"></view>
+  </view>
+  <!-- 固定头部区域，包含导航栏和标题等内容 -->
+  <view class="header-fixed-wrap">
+    <!-- 导航栏，高度由 navBarHeight 决定 -->
+    <view class="nav-bar" style="height: {{navBarHeight}}px"></view>
+    <!-- 使用 flex 布局的容器，用于排列左侧、中间和右侧内容 -->
+    <view class="flex-box">
+      <!-- 左侧区域，可根据需要添加内容 -->
+      <view class="left">
+      </view>
+      <!-- 中间区域，显示标题 -->
+      <view class="middle">
+        <view class="title">{{title}}</view>
+      </view>
+      <!-- 右侧区域，可根据需要添加内容 -->
+      <view class="right"></view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,23 @@
+<!--pages/xsh/xsh.wxml-->
+<header-return title="学生会"></header-return>
+
+<view class="message-container">
+  <view class="message">
+    <image class="avatar" src="../../pages/icon/Sort/xsh.jpg"></image>
+    <view class="message-content">
+      <text class="sender" style="position: relative; left: 8rpx; top: 20rpx">学生会</text>
+    </view>
+  </view>
+</view>
+
+<view class="text-container">
+    <view class="p-container">
+        社团介绍
+    </view>
+    <view class="q">学生会简介</view>
+    <view class="content-text">
+    <text class="paragraph">珠海科技学院学生会是在校党委领导下，校团委指导下的主要学生组织，作为学校联系广大同学的桥梁和纽带，以加强对同学的思想引领为根本，以全心全意服务同学为宗旨，秉持“微笑传递服务，服务感动你我”的目标，集同学在学业发展、身心健康、社会融入、权益维护等方面的需求，团结和引导广大同学热爱祖国、全面发展、昂扬向上、奋发有为，成长为担当民族复兴大任的时代新人。</text>
+    <text class="paragraph">校学生会由主席团及综合事务部、实践创新部、学习部、宣传媒体部、文体部、生活服务部六个部门组成。通过主席团协调带领六个部门，积极发挥思想引领作用，引导广大同学把个人理想融入到党和人民共同奋斗之中，围绕同学成长成才所需，开展思想引领、学风建设、文体艺术、社会实践、创业就业等各类活动。</text>
+</view>
+    <image class="photo" src="../../pages/icon/e/e_1.jpg" mode=""/>
+</view>

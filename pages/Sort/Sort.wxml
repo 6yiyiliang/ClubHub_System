@@ -1,0 +1,56 @@
+<!--pages/Sort/Sort.wxml-->
+<custom-header title="社团"></custom-header>
+
+<view class="message-container">
+  <view class="message">
+    <image class="avatar" src="../../pages/icon/Sort/q.jpg"></image>
+    <view class="message-content">
+      <text class="sender" style="position: relative; left: 4rpx; top: 12rpx">青年志愿者协会</text>
+      <text class="time" style="position: relative; left: 0rpx; top: 35rpx" bindtap="navigateToPage" data-url="/pages/q/q">查看社团简介></text>
+    </view>
+  </view>
+</view>
+
+<view class="message-container-2" style="position: relative; left: 0rpx; top: 20rpx">
+  <view class="message">
+    <image class="avatar" src="../../pages/icon/Sort/it.jpg"></image>
+    <view class="message-content">
+      <text class="sender" style="position: relative; left: 4rpx; top: 12rpx">计算机协会</text>
+      <text class="time" style="position: relative; left: 0rpx; top: 35rpx" bindtap="navigateToPage" data-url="/pages/it/it">查看社团简介></text>
+    </view>
+  </view>
+</view>
+
+<view class="message-container-3" style="position: relative; left: 0rpx; top: 41rpx">
+  <view class="message">
+    <image class="avatar" src="../../pages/icon/Sort/n.jpg"></image>
+    <view class="message-content">
+      <text class="sender" style="position: relative; left: 4rpx; top: 12rpx">大学生国防教育协会</text>
+      <text class="time" style="position: relative; left: 0rpx; top: 35rpx" bindtap="navigateToPage" data-url="/pages/n/n">查看社团简介></text>
+    </view>
+  </view>
+</view>
+
+<view class="message-container-3" style="position: relative; left: 0rpx; top: 62rpx">
+  <view class="message">
+    <image class="avatar" src="../../pages/icon/Sort/xsh.jpg"></image>
+    <view class="message-content">
+      <text class="sender" style="position: relative; left: 4rpx; top: 12rpx">学生会</text>
+      <text class="time" style="position: relative; left: 0rpx; top: 35rpx" bindtap="navigateToPage" data-url="/pages/xsh/xsh">查看社团简介></text>
+    </view>
+  </view>
+</view>
+
+<view class="message-container" style="position: relative; left: 0rpx; top: 83rpx">
+  <view class="message">
+    <image class="avatar" src="../../pages/icon/Sort/xsl.jpg"></image>
+    <view class="message-content">
+      <text class="sender" style="position: relative; left: 4rpx; top: 12rpx">学生社团联合会</text>
+      <text class="time" style="position: relative; left: 0rpx; top: 35rpx" bindtap="navigateToPage" data-url="/pages/xsl/xsl">查看社团简介></text>
+    </view>
+  </view>
+</view>
+
+<view>
+  <custom-navigation-v2 navId="2" style="position: relative; left: 0rpx; top: 547rpx"></custom-navigation-v2>
+</view>

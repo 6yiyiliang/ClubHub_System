@@ -1,0 +1,135 @@
+/* pages/System/System.wxss */
+/* 页面容器 */
+.system-container {
+    padding: 30rpx;
+    background-color: #f5f7fa;
+    min-height: 100vh;
+  }
+  
+  /* 头部区域 */
+  .header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40rpx 0 60rpx;
+  }
+  
+  .system-logo {
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 30rpx;
+    box-shadow: 0 8rpx 20rpx rgba(0, 0, 0, 0.1);
+  }
+  
+  .system-name {
+    font-size: 42rpx;
+    font-weight: bold;
+    color: #333;
+    margin: 20rpx 0 10rpx;
+  }
+  
+  .system-version {
+    font-size: 26rpx;
+    color: #999;
+  }
+  
+  /* 信息卡片 */
+  .info-card {
+    background-color: #fff;
+    border-radius: 20rpx;
+    padding: 30rpx;
+    margin-bottom: 30rpx;
+    box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.05);
+  }
+  
+  .card-title {
+    display: flex;
+    align-items: center;
+    font-size: 34rpx;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30rpx;
+    padding-bottom: 20rpx;
+    border-bottom: 1rpx solid #f0f0f0;
+  }
+  
+  .title-icon {
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 15rpx;
+  }
+  
+  .card-content {
+    font-size: 28rpx;
+    color: #666;
+    line-height: 1.8;
+  }
+  
+  /* 功能列表 */
+  .feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30rpx;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .feature-icon {
+    width: 50rpx;
+    height: 50rpx;
+    margin-right: 20rpx;
+    flex-shrink: 0;
+  }
+  
+  .feature-text {
+    flex: 1;
+  }
+  
+  .feature-title {
+    display: block;
+    font-size: 30rpx;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 8rpx;
+  }
+  
+  .feature-desc {
+    display: block;
+    font-size: 26rpx;
+    color: #888;
+    line-height: 1.5;
+  }
+  
+  /* 开发者信息 */
+  .developer-info .card-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .team-avatar {
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+    margin-right: 30rpx;
+    border: 2rpx solid #eee;
+  }
+  
+  .developer-meta {
+    flex: 1;
+    font-size: 28rpx;
+    color: #666;
+  }
+  
+  .developer-meta text {
+    display: block;
+    margin-bottom: 12rpx;
+  }
+  
+  .developer-meta text:last-child {
+    font-size: 24rpx;
+    color: #999;
+    margin-top: 20rpx;
+  }

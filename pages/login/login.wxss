@@ -1,0 +1,41 @@
+/* pages/login/login.wxss */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    background-color: #f8f8f8;
+  }
+  .logo {
+    width: 120px;
+    margin-bottom: 15px;
+    border-radius: 20px; 
+    margin-top: -120px;
+  }
+  .welcome {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  .login-btn {
+    width: 90%;
+    height: 45px;
+    background-color: #07c160; 
+    color: #fff;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: 500; /* 调整字体粗细 */
+    display: flex; /* 使用 Flexbox */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+  .agree {
+    position: absolute;
+    bottom: 35px; /* 距离底部 20px */
+    width: 100%; /* 占满屏幕宽度 */
+    text-align: center; /* 让文字居中 */
+    font-size: 14px;
+    color: #999;
+  }

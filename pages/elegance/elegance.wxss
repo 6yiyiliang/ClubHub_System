@@ -1,0 +1,48 @@
+/* pages/elegance/elegance.wxss */
+page {
+    height: 100vh;
+    background-color: #efefef !important;
+    padding: 16rpx;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+page view:nth-child(n + 2) {
+    margin-top: 16rpx;
+}
+.good-hot {
+    background-color: #fff;
+    padding: 16rpx;
+    border-radius: 15rpx;
+    font-size: 24rpx;
+    transform: translateY(-10rpx); /* 上移 50rpx */
+}
+.good-hot .scroll-x {
+    width: 100%;
+    white-space: nowrap;
+}
+.good-hot .scroll-x view {
+    display: inline-block;
+    width: 400rpx;
+    height: 333rpx;
+    margin-right: 16rpx;
+}
+.good-hot .scroll-x view image {
+    width: 100%;
+    height: 320rpx;
+}
+.good-hot .scroll-x view .good-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.good-hot .scroll-x view .good-item image {
+    width: 400rpx;
+    border-radius: 10rpx;
+}
+.good-hot .scroll-x view .good-item text:nth-of-type(1) {
+    font-weight: bold;
+}
+.good-hot .scroll-x view:last-child {
+    margin-right: 0;
+}

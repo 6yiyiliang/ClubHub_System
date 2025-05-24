@@ -1,0 +1,106 @@
+<!--pages/Homepage/Homepage.wxml-->
+<custom-header title="首页"></custom-header>
+<!--轮播图区域-->
+<view class="swiper">
+ <swiper 
+ autoplay 
+ circular
+ indicator-dots 
+ interval="2000" 
+ indicator-color="#fff"
+ indicator-active-color="#f9dd56"
+ > 
+  <swiper-item>
+   <image src="../../pages/icon/banner/banner_1.jpg" mode=""/>
+  </swiper-item>
+  <swiper-item>
+    <image src="../../pages/icon/banner/banner_2.jpg" mode=""/>
+  </swiper-item>
+  <swiper-item>
+    <image src="../../pages/icon/banner/banner_3.jpg" mode=""/>
+  </swiper-item>
+ </swiper>
+</view>
+
+<view class="good-nav">
+
+<view style="position: relative; left: 0rpx; top: 8rpx">
+<navigator url="/pages/notice/notice">
+<image src="../../pages/icon/button/notice.png" mode=""/>
+<text>社团公告</text>
+</navigator>
+</view>
+
+<view>
+<navigator url="/pages/Sort/Sort">
+<image src="../../pages/icon/button/introduction.png" mode=""/>
+<text>社团简介</text>
+</navigator>
+</view>
+
+<view>
+<navigator url="/pages/elegance/elegance">
+<image src="../../pages/icon/button/elegance.png" mode=""/>
+<text>社团风采</text>
+</navigator>
+</view>
+
+</view>
+
+
+<view class="good-hot">
+    <text style="font-weight: bold; font-size: 32rpx;">青年志愿者协会</text>
+ <scroll-view class="scroll-x" scroll-x>
+  <view>
+   <view class="good-item">
+        <image src="../../pages/icon/slide/three_1.jpg" mode=""/>
+
+   </view>
+  </view>
+  <view>
+   <view class="good-item">
+        <image src="../../pages/icon/slide/three_6.jpg" mode=""/>
+   </view>
+  </view>
+  <view>
+   <view class="good-item">
+        <image src="../../pages/icon/slide/three_3.jpg" mode=""/>
+   </view>
+  </view>
+  </scroll-view>
+  
+</view>
+
+
+
+<view class="good-hot">
+    <text style="font-weight: bold; font-size: 32rpx;">计算机协会</text>
+ <scroll-view class="scroll-x" scroll-x>
+  <view>
+   <view class="good-item">
+        <image src="../../pages/icon/slide/cs3.jpg" mode=""/>
+   </view>
+  </view>
+  <view>
+   <view class="good-item">
+        <image src="../../pages/icon/slide/cs4.jpg" mode=""/>
+   </view>
+  </view>
+  <view>
+   <view class="good-item">
+        <image src="../../pages/icon/slide/cs1.jpg" mode=""/>
+   </view>
+  </view>
+  </scroll-view>
+  
+</view>
+
+<view class="more-clubs">
+    <navigator url="/pages/Sort/Sort" class="more-clubs-link">
+        点击查看更多社团
+    </navigator>
+</view>
+
+<view>
+  <custom-navigation-v2 navId="1"></custom-navigation-v2>
+</view>

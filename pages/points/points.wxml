@@ -1,0 +1,40 @@
+<!-- pages/points/points.wxml -->
+<header-return title="积分排行榜"></header-return>
+
+<view class="container">
+  <!-- 顶部标题装饰 -->
+  <view class="header-decor">
+    <view class="decor-line"></view>
+    <view class="header-title">积分排行榜</view>
+    <view class="decor-line"></view>
+  </view>
+  
+  <!-- 排行榜容器 -->
+  <view class="rank-list" style="height: 1460rpx; display: block; box-sizing: border-box; width: 620rpx">
+    <block wx:for="{{pointsList}}" wx:key="id">
+      <!-- 排名项 -->
+      <view class="rank-item {{index < 3 ? 'top-rank' : ''}} rank-{{index + 1}}">
+        <!-- 排名数字 -->
+        <view class="rank-number">{{index + 1}}</view>
+        
+        <!-- 用户头像 -->
+        <image class="rank-avatar" src="{{item.avatar}}" mode="aspectFill" />
+        
+        <!-- 用户信息 -->
+        <view class="rank-info">
+          <view class="rank-name">{{item.name}}</view>
+          <view class="rank-detail">
+            <text class="rank-label">积分</text>
+            <text class="rank-score">{{item.score}}</text>
+          </view>
+        </view>
+        
+        <!-- 前三名奖牌 -->
+        <image wx:if="{{index === 0}}" class="medal" src="../../pages/icon/gold.png" />
+        <image wx:if="{{index === 1}}" class="medal" src="../../pages/icon/silver.png" />
+        <image wx:if="{{index === 2}}" class="medal" src="../../pages/icon/bronze.png" />
+      </view>
+    </block>
+  </view>
+  
+</view>

@@ -1,0 +1,24 @@
+<!--pages/it/it.wxml-->
+<header-return title="计算机协会"></header-return>
+
+<view class="message-container">
+  <view class="message">
+    <image class="avatar" src="../../pages/icon/Sort/it.jpg"></image>
+    <view class="message-content">
+      <text class="sender" style="position: relative; left: 8rpx; top: 20rpx">计算机协会</text>
+    </view>
+  </view>
+</view>
+
+<view class="text-container">
+    <view class="p-container">
+        社团介绍
+    </view>
+    <view class="q">计算机协会简介</view>
+    <view class="content-text">
+    <text class="paragraph">计算机协会（简称计协）成立于2005年4月，由我校计算机学院发起，是我校培养计算机领域优秀人才的重要基地。计协始终秉持着“立足计算机，服务好珠科”的宗旨，以及“包容、开放、探索、创新”的核心价值观，以计算机为基石，不断开拓进取，推陈出新。</text>
+    <text class="paragraph">成立已逾19年的计协依旧风华正茂，这里不乏全美数学建模一等奖获得者、中国国际大学生创新大赛团队、蓝桥杯国赛选手、还有C++，Java高级工程师持证者等优秀人才。当然，我们也给予优秀的IT人才扶摇直上的“跳板”：中国计算机应用技术大赛校内选拔赛、“蓝桥杯”全国软件和信息技术专业人才大赛等大型赛事皆由计协参与举办。一代代计协成员凭着积极进取之心，在这里发光发热，这是广大珠科IT爱好者们逐梦的起点。</text>
+    <text class="paragraph">计算机协会分为以下五大部门：秘书处、宣传部、软件部、组织部和游戏制作部。部门之间相辅相成，缺一不可。协会的各部门会定期为协会开展各类学术、技能培训会，我们致力于为热爱计算机的学子们搭建一个互相学习交流的平台。无论你是经验丰富的计算机高手，还是初涉此道的新手小白，只要你对计算机心怀热爱，计协都热忱欢迎你的加入。让我们携手并肩，共同发展，一同铸就计协的璀璨未来！</text>
+</view>
+    <image class="photo" src="../../pages/icon/slide/cs1.jpg" mode=""/>
+</view>

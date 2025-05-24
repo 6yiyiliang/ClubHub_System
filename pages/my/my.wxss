@@ -1,0 +1,47 @@
+/* pages/my/my.wxss */
+.club-container {
+    padding: 32rpx;
+  }
+  
+  .club-card {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 20rpx;
+    padding: 24rpx;
+    margin-bottom: 24rpx;
+    box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.05);
+  }
+  
+  .club-logo {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%; /* 设置为圆形 */
+    margin-right: 24rpx;
+    object-fit: cover;  /* 防止变形，图片裁切 */
+  }
+  
+  .club-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .club-name {
+    font-size: 32rpx;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .club-position {
+    font-size: 26rpx;
+    color: #4caf50;
+    margin-top: 8rpx;
+  }
+  
+  .club-desc {
+    font-size: 24rpx;
+    color: #999;
+    margin-top: 12rpx;
+  }
+  

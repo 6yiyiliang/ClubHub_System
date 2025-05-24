@@ -1,0 +1,55 @@
+<!--pages/me/me.wxml-->
+<custom-header title="我的"></custom-header>
+
+<!-- 用户信息区域 -->
+<view class="user-section">
+  <view class="user-main">
+    <image class="avatar" src="{{avatarUrl}}" />
+    <view class="user-meta">
+        <text class="username">{{username}}</text>
+      <view class="p">
+        <text class="position">{{position}}</text>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+<!-- 功能菜单区域 -->
+<!-- 修改menu-grid部分 -->
+<view class="menu-section">
+  <view class="menu-title">我的今日活动</view>
+  <view class="menu-subtitle">您今天没有活动哦~</view>
+  
+  <view class="vertical-menu">
+    <navigator url="../../pages/Material/Material" class="menu-button">
+      <image src="../../pages/icon/me/profile.png" class="button-icon" />
+      <text>修改我的个人资料</text>
+    </navigator>
+    <navigator url="../../pages/my/my" class="menu-button">
+      <image src="../../pages/icon/me/club.png" class="button-icon" />
+      <text>我的社团</text>
+    </navigator>
+    <navigator url="../../pages/points/points" class="menu-button">
+      <image src="../../pages/icon/me/ranking.png" class="button-icon" />
+      <text>积分排行榜</text>
+    </navigator>
+    <navigator url="../../pages/Statement/Statement" class="menu-button">
+      <image src="../../pages/icon/me/transaction.png" class="button-icon" />
+      <text>收支明细</text>
+    </navigator>
+  </view>
+</view>
+
+<!-- 修改关于区域部分 -->
+<view class="about-section">
+  <navigator url="/pages/System/System" class="about-button">
+    <image src="../../pages/icon/me/about.png" class="about-icon" />
+    <text>关于本系统</text>
+  </navigator>
+</view>
+
+
+<view>
+  <custom-navigation-v2 navId="4"></custom-navigation-v2>
+</view>

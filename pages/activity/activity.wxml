@@ -1,0 +1,151 @@
+<!--pages/activity/activity.wxml-->
+<custom-header title="活动"></custom-header>
+
+<!-- 修改标签页和内容区结构 -->
+<view class="container">
+  <!-- 标签页 -->
+  <view class="tabs" style="width: 337rpx; display: flex; box-sizing: border-box; left: NaNrpx; top: 0rpx">
+    <view 
+      class="tab {{activeTab === 0 ? 'active' : ''}}" 
+      bindtap="switchTab" 
+      data-index="0"
+     style="position: relative; left: -6rpx; top: 0rpx">社团招新</view>
+    <view 
+      class="tab {{activeTab === 1 ? 'active' : ''}}" 
+      bindtap="switchTab" 
+      data-index="1"
+     style="position: relative; left: 10rpx; top: 0rpx">活动报名</view>
+  </view>
+
+  <!-- 招新板块 -->
+  <view class="content {{activeTab === 0 ? 'active' : ''}}">    
+    <!-- 招新发布表单（仅管理员可见） -->
+    <view class="form-container" wx:if="{{isManager}}" style="position: relative; left: 0rpx; top: -143rpx; width: 747rpx; display: block; box-sizing: border-box">
+      <view class="form-title">发布新招新</view>
+      <input 
+        placeholder="招新标题" 
+        value="{{newRecruitment.title}}"
+        bindinput="handleInputChange"
+        data-field="title"
+        data-type="recruitment"
+        class="form-input"
+      />
+      <input 
+        placeholder="截止日期（如：2023-09-30）" 
+        value="{{newRecruitment.date}}"
+        bindinput="handleInputChange"
+        data-field="date"
+        data-type="recruitment"
+        class="form-input"
+      />
+      <textarea 
+        placeholder="招新详情" 
+        value="{{newRecruitment.content}}"
+        bindinput="handleInputChange"
+        data-field="content"
+        data-type="recruitment"
+        class="form-textarea"
+      ></textarea>
+      <button bindtap="submitRecruitment" class="submit-btn">发布招新</button>
+    </view>
+
+    <!-- 招新列表 -->
+    <view class="list">
+      <view class="item" wx:for="{{recruitments}}" wx:key="id" style="position: relative; left: 0rpx; top: -143rpx">
+        <view class="item-header">
+          <text class="title">{{item.title}}</text>
+          <text class="status {{item.status === '已截止' ? 'ended' : ''}}">{{item.status}}</text>
+        </view>
+        <view class="item-meta">
+          <text>截止日期：{{item.date}}</text>
+          <text>已报名：{{item.applicants}}人</text>
+        </view>
+        <view class="item-content">{{item.content}}</view>
+        <view class="item-actions">
+          <button 
+            wx:if="{{item.status === '报名中'}}" 
+            bindtap="signUp" 
+            data-type="recruitment" 
+            data-id="{{item.id}}"
+            class="action-btn"
+          >立即报名</button>
+          <button 
+            wx:if="{{isManager && item.status === '报名中'}}" 
+            bindtap="reviewApplicant" 
+            data-id="{{item.id}}" 
+            data-action="approve"
+            class="action-btn manager"
+          >审核报名</button>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 活动板块 -->
+  <view class="content {{activeTab === 1 ? 'active' : ''}}">
+    <!-- 活动发布表单（仅管理员可见） -->
+    <view class="form-container" style="position: relative; left: 0rpx; top: -402rpx" wx:if="{{isManager}}">
+      <view class="form-title">发布新活动</view>
+      <input 
+        placeholder="活动标题" 
+        value="{{newActivity.title}}"
+        bindinput="handleInputChange"
+        data-field="title"
+        data-type="activity"
+        class="form-input"
+      />
+      <input 
+        placeholder="活动日期（如：2023-10-15）" 
+        value="{{newActivity.date}}"
+        bindinput="handleInputChange"
+        data-field="date"
+        data-type="activity"
+        class="form-input"
+      />
+      <textarea 
+        placeholder="活动详情" 
+        value="{{newActivity.content}}"
+        bindinput="handleInputChange"
+        data-field="content"
+        data-type="activity"
+        class="form-textarea"
+      ></textarea>
+      <button bindtap="submitActivity" class="submit-btn">发布活动</button>
+    </view>
+
+    <!-- 活动列表 -->
+    <view class="list">
+      <view class="item" style="position: relative; left: 0rpx; top: -402rpx" wx:for="{{activities}}" wx:key="id">
+        <view class="item-header">
+          <text class="title">{{item.title}}</text>
+          <text class="status {{item.status === '已结束' ? 'ended' : ''}}">{{item.status}}</text>
+        </view>
+        <view class="item-meta">
+          <text>活动时间：{{item.date}}</text>
+          <text>已报名：{{item.participants}}人</text>
+        </view>
+        <view class="item-content">{{item.content}}</view>
+        <view class="item-actions">
+          <button 
+            wx:if="{{item.status === '报名中'}}" 
+            bindtap="signUp" 
+            data-type="activity" 
+            data-id="{{item.id}}"
+            class="action-btn"
+          >立即报名</button>
+          <button 
+            wx:if="{{isManager && item.status === '报名中'}}" 
+            bindtap="reviewApplicant" 
+            data-id="{{item.id}}" 
+            data-action="approve"
+            class="action-btn manager"
+          >审核名单</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view>
+  <custom-navigation-v2 navId="3"></custom-navigation-v2>
+</view>

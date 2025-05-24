@@ -1,0 +1,18 @@
+<!--pages/Statement/Statement.wxml-->
+<header-return title="收支明细"></header-return>
+
+<view class="container">
+  <view class="statement-list" style="width: 622rpx; display: flex; box-sizing: border-box">
+    <block wx:for="{{statementList}}" wx:key="id">
+      <view class="statement-item">
+        <view class="left">
+          <view class="item-name">{{item.item}}</view>
+          <view class="item-date">{{item.date}}</view>
+        </view>
+        <view class="right {{item.type === '收入' ? 'income' : 'expense'}}">
+          {{item.type === '收入' ? '+' : '-'}}{{item.amount}} 元
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

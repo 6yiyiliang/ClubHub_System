@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+      "custom-header": "/components/Header/index",
+      "custom-navigation-v2": "/components/Navigation/index" 
+    },
+    "pages": [
+        "pages/Sort/Sort"
+      ]
+  }

@@ -1,0 +1,127 @@
+/* pages/Forum/Forum.wxss */
+.forum-container {
+    padding: 20rpx;
+    background-color: #f5f5f5;
+    min-height: calc(100vh - 220rpx); /* 关键修改：减去底部导航栏和留白高度 */
+    padding-bottom: 20rpx; /* 减少底部留白 */
+  }
+  
+  /* 发帖区域 - 修改高度 */
+  .post-input-area {
+    background-color: #fff;
+    border-radius: 12rpx;
+    padding: 15rpx 20rpx; /* 减少上下padding */
+    margin-bottom: 20rpx;
+    box-shadow: 0 2rpx 6rpx rgba(0,0,0,0.1);
+  }
+  
+  .post-input {
+    width: 100%;
+    min-height: 80rpx; /* 原120rpx → 80rpx */
+    margin-bottom: 15rpx; /* 减少间距 */
+    font-size: 28rpx; /* 保持字体大小 */
+    line-height: 1.4;
+  }
+  
+  .submit-btn {
+    background-color: #79beec;
+    color: white;
+    border-radius: 8rpx;
+    height: 60rpx; /* 固定高度 */
+    line-height: 60rpx; /* 垂直居中 */
+    font-size: 26rpx;
+    padding: 0 20rpx;
+  }
+
+  .post-item {
+    background-color: #fff;
+    border-radius: 12rpx;
+    padding: 20rpx;
+    margin-bottom: 20rpx;
+    box-shadow: 0 2rpx 6rpx rgba(0,0,0,0.1);
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20rpx;
+  }
+  
+  .avatar {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    margin-right: 20rpx;
+  }
+  
+  .post-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .author {
+    font-size: 28rpx;
+    font-weight: bold;
+  }
+  
+  .time {
+    font-size: 24rpx;
+    color: #999;
+  }
+  
+  .post-content {
+    font-size: 28rpx;
+    margin-bottom: 20rpx;
+    line-height: 1.5;
+  }
+  
+  /* 点赞按钮 */
+  .post-actions {
+    display: flex;
+    padding: 10rpx 0;
+    border-top: 1rpx solid #eee;
+    border-bottom: 1rpx solid #eee;
+    margin-bottom: 20rpx;
+  }
+  
+  .like-btn {
+    display: flex;
+    align-items: center;
+    padding: 10rpx 20rpx;
+    color: #666;
+  }
+  
+  .like-btn.liked {
+    color: #f44336;
+  }
+  
+  .like-btn .icon {
+    margin-right: 10rpx;
+  }
+  
+  /* 评论区域 */
+  .comments-section {
+    margin-top: 20rpx;
+  }
+  
+  .comment-item {
+    font-size: 26rpx;
+    padding: 10rpx 0;
+    border-bottom: 1rpx dashed #eee;
+  }
+  
+  .comment-author {
+    color: #576b95;
+    font-weight: bold;
+  }
+  
+  .add-comment {
+    margin-top: 20rpx;
+  }
+  
+  .comment-input {
+    background-color: #f5f5f5;
+    border-radius: 20rpx;
+    padding: 10rpx 20rpx;
+    font-size: 26rpx;
+  }

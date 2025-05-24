@@ -1,0 +1,68 @@
+/* components/Header/index.wxss */
+/* 头部容器样式 */
+.header-wrap {
+    width: 100%; /* 宽度占满父容器 */
+  }
+  /* 导航栏样式 */
+  .header-wrap .nav-bar {
+    width: 100%; /* 宽度占满父容器 */
+  }
+  /* 固定头部区域样式 */
+  .header-fixed-wrap {
+    width: 100%; /* 宽度占满父容器 */
+    background-color: #ffffff; /* 背景颜色为白色 */
+    border-bottom: 1px solid #cccccc; /* 底部边框，颜色为浅灰色 */
+    position: fixed; /* 固定定位 */
+    left: 0; /* 定位到页面左侧 */
+    top: -15rpx; /* 定位到页面顶部 */
+    z-index: 1000; /* 设置层级，确保头部在最上层 */
+  }
+  /* Flex 布局容器样式 */
+  .header-fixed-wrap .flex-box {
+    width: 100%; /* 宽度占满父容器 */
+    height: 80rpx; /* 高度设置为 80rpx */
+    display: flex; /* 使用 Flex 布局 */
+    flex-direction: row; /* 主轴方向为水平 */
+    flex-wrap: wrap; /* 允许换行 */
+    justify-content: space-between; /* 主轴对齐方式为两端对齐 */
+    align-items: center; /* 交叉轴对齐方式为居中对齐 */
+  }
+  /* 左侧和右侧区域样式 */
+  .header-fixed-wrap .left,
+  .header-fixed-wrap .right {
+    flex: 2; /* 占据 2 份空间 */
+  }
+  /* 中间区域样式 */
+  .header-fixed-wrap .middle {
+    flex: 5; /* 占据 5 份空间 */
+  }
+  /* 返回按钮样式 */
+  .header-fixed-wrap .left .btn-back {
+    width: 80rpx; /* 宽度为 80rpx */
+    height: 60rpx; /* 高度为 60rpx */
+    line-height: 60rpx; /* 行高与高度一致，实现垂直居中 */
+    font-size: 28rpx; /* 字体大小为 28rpx */
+    font-weight: normal; /* 字体粗细为正常 */
+    padding: 0; /* 内边距为 0 */
+    background: none; /* 背景为透明 */
+  }
+  /* 标题样式 */
+  .header-fixed-wrap .middle .title {
+    width: 80%; /* 宽度为 80% */
+    text-align: center; /* 文本居中对齐 */
+    white-space: nowrap; /* 禁止换行 */
+    overflow: hidden; /* 超出部分隐藏 */
+    text-overflow: ellipsis; /* 超出部分显示省略号 */
+    margin: 0 auto; /* 水平居中 */
+  }
+  /* 占位块容器样式 */
+  .empty-header-wrap {
+    width: 100%; /* 宽度占满父容器 */
+    position: relative; /* 相对定位 */
+    z-index: 1; /* 设置层级 */
+  }
+  /* 占位块样式 */
+  .empty-header-wrap .empty-box {
+    width: 100%; /* 宽度占满父容器 */
+    height: 80rpx; /* 高度为 80rpx */
+  }

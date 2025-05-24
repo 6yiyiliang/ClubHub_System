@@ -1,0 +1,31 @@
+<!--pages/notice/notice.wxml-->
+<header-return title="社团公告"></header-return>
+
+<van-tab class="tab-item" title-style='font-size: 32rpx' title="成果审核">
+    <!-- 第一个公告 -->
+    <navigator url="/pages/notice_q/notice_q" class="result-list">
+        <!-- 图片和文字部分 -->
+        <view class="result-content">
+            <image class="result-image" src="../../pages/icon/slide/three_1.jpg" mode="widthFix"></image>
+            <view class="result-info">
+                <view class="result-title">青年志愿者协会纳新</view>
+                <view class="result-field">青年志愿者协会是一个公益性的组织，长期以来，我们青协始终秉承“尽己所能，不计报酬，帮助他人，服务社会”...</view>
+                <text class="time" style="position: relative; left: 162rpx; top: 8rpx">2024年09月17日</text>
+            </view>
+        </view>
+    </navigator>
+
+    <!-- 第二个公告 -->
+    <navigator url="/pages/notice_c/notice_c" class="result-list">
+        <!-- 图片和文字部分 -->
+        <view class="result-content"> <!-- 修复：标签名修正为 view -->
+            <image class="result-image" src="../../pages/icon/dsj.jpg" mode="widthFix"></image>
+            <view class="result-info">
+                <view class="result-title">第十届大学生创新创业...</view>
+                <view class="result-field">为进一步增强协会凝聚力，熟悉协会各部门职责，激发新成员工作热情，10月26日晚18：30，第十届大学生创新创业...</view>
+                <text class="time" style="position: relative; left: 162rpx; top: 8rpx">2024年11月18日</text>
+            </view>
+        </view>
+    </navigator>
+
+</van-tab>

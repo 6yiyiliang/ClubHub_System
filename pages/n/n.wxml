@@ -1,0 +1,22 @@
+<!--pages/n/n.wxml-->
+<header-return title="大学生国防教育协会"></header-return>
+<view class="message-container">
+  <view class="message">
+    <image class="avatar" src="../../pages/icon/Sort/n.jpg"></image>
+    <view class="message-content">
+      <text class="sender" style="position: relative; left: 8rpx; top: 20rpx">大学生国防教育协会</text>
+    </view>
+  </view>
+</view>
+
+<view class="text-container">
+    <view class="p-container">
+        社团介绍
+    </view>
+    <view class="q">大学生国防教育协会简介</view>
+    <view class="content-text">
+    <text class="paragraph">大学生国防教育协会以我校退伍学子群体为基础，汇聚了我校关心国防、爱好国防的同学们。协会推动我校退役大学生继续发光发热，积极宣传弘扬我党我军的优良传统作风。协会致力于提升大学生军事素养与理论知识能力，并为我校退伍军人及军事爱好者提供一个交流平台，为有入伍意向的大学生提供一个能更深入了解部队的平台。协会是以秉持“普及国防军事知识，增强爱国主义精神”为理念，进行国防和爱国主义教育的学生组织。</text>
+    <text class="paragraph">欢迎军事爱好者们以及有意参军入伍的同学加入我们。在这里，你将收获更多军事知识，还有退伍学长学姐为你解读征兵政策，与你分享多彩的军旅生活，让你更近一步的了解真实的中国军人！</text>
+</view>
+    <image class="photo" src="../../pages/icon/slide/n.jpg" mode=""/>
+</view>

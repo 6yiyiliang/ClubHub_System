@@ -1,0 +1,69 @@
+<!--pages/Forum/Forum.wxml-->
+<custom-header title="论坛"></custom-header>
+
+<view class="forum-container" style="height: 1154rpx; display: block; box-sizing: border-box">
+  <!-- 发帖区域 -->
+  <view class="post-input-area">
+    <textarea 
+      placeholder="有什么想和大家讨论的？" 
+      value="{{newPostContent}}"
+      bindinput="inputChange"
+      class="post-input"
+    ></textarea>
+    <button bindtap="submitPost" class="submit-btn">发布</button>
+  </view>
+
+  <!-- 帖子列表 -->
+  <view class="post-list">
+    <block wx:for="{{posts}}" wx:key="id">
+      <view class="post-item">
+        <view class="post-header">
+          <image src="{{item.avatar}}" class="avatar"></image>
+          <view class="post-info">
+            <text class="author">{{item.author}}</text>
+            <text class="time">{{item.time}}</text>
+          </view>
+        </view>
+        
+        <view class="post-content">{{item.content}}</view>
+        
+        <view class="post-actions">
+          <view 
+            class="like-btn {{item.liked ? 'liked' : ''}}" 
+            bindtap="toggleLike" 
+            data-index="{{index}}"
+          >
+            <text class="icon">❤</text>
+            <text>{{item.likes}}</text>
+          </view>
+        </view>
+        
+        <!-- 评论区域 -->
+        <view class="comments-section">
+          <block wx:for="{{item.comments}}" wx:key="id">
+            <view class="comment-item">
+              <text class="comment-author">{{item.author}}：</text>
+              <text class="comment-content">{{item.content}}</text>
+            </view>
+          </block>
+          
+          <!-- 修改后的评论输入部分 -->
+            <view class="add-comment">
+            <input 
+                placeholder="写评论..." 
+                bindconfirm="addComment"
+                bindinput="commentInputChange"
+                data-index="{{index}}"
+                value="{{commentInputs[index] || ''}}"
+                class="comment-input"
+            />
+            </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+
+<view>
+  <custom-navigation-v2 navId="-1"></custom-navigation-v2>
+</view>

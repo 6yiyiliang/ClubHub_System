@@ -1,0 +1,3 @@
+<!--pages/notice_c/notice_c.wxml-->
+<header-return title="第十届大学生创新创业..."></header-return>
+<image class="result-image" src="../../pages/icon/c-t.jpg" mode="widthFix"></image>

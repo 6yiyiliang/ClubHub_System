@@ -1,0 +1,4 @@
+/* pages/notice_q/notice_q.wxss */
+.result-image{
+    width: 100%;
+}

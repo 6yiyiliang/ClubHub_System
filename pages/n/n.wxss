@@ -1,0 +1,68 @@
+/* pages/n/n.wxss */
+page {
+    background-color: #f5f5f5; 
+    height: 100%;
+    width: 100%;
+}
+.message-container {
+    display: flex;
+    justify-content: center; 
+    width: 95%;
+    min-height: 60px; 
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px; 
+    margin: 8px auto;
+}
+.message {
+    display: flex;
+    align-items: flex-start; 
+    margin-bottom: 10px;
+    width: 620rpx;
+    padding-bottom: 6px;
+    margin-top: 15px; 
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.message-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.sender {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 39rpx;
+    color: rgb(94, 94, 94);
+}
+.content {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+.p-container {
+    font-weight: bold; 
+    font-size: 16px; 
+    margin-bottom: 20rpx; 
+}
+.text-container {
+    background-color: rgb(255, 255, 255); 
+    margin: 13px;
+    padding: 20px;
+    border-radius: 13px; 
+}
+.content-text .paragraph {
+    display: block; 
+    text-indent: 2em; 
+    margin-bottom: 20rpx; 
+}
+.photo{
+    margin-top: 15rpx;
+}
+.q{
+    text-indent: 1.3em; 
+    margin: 19rpx;
+}

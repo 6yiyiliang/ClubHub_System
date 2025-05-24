@@ -1,0 +1,23 @@
+<!--pages/xsl/xsl.wxml-->
+<header-return title="学生社团联合会"></header-return>
+
+<view class="message-container">
+  <view class="message">
+    <image class="avatar" src="../../pages/icon/Sort/xsh.jpg"></image>
+    <view class="message-content">
+      <text class="sender" style="position: relative; left: 8rpx; top: 20rpx">学生社团联合会</text>
+    </view>
+  </view>
+</view>
+
+<view class="text-container">
+    <view class="p-container">
+        社团介绍
+    </view>
+    <view class="q">学生社团联合会简介</view>
+    <view class="content-text">
+    <text class="paragraph">珠海科技学院学生社团联合会成立于2006年4月，是在校党委领导下，校团委指导下的校级学生组织。</text>
+    <text class="paragraph">围绕“笃学感恩”的校园文化宗旨，管理、服务、统筹、协调珠海科技学院71个学生社团。开展思想引领，丰富校园⽂化⽣活，提⾼学⽣综合素质。设有秘书处、组织部、监察部、发展部、媒体宣传部，各部门统筹协调，凝心聚力，营造出良好的学生组织氛围。</text>
+</view>
+    <image class="photo" src="../../pages/icon/slide/xsl.jpg" mode=""/>
+</view>

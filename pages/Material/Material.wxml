@@ -1,0 +1,21 @@
+<!--pages/Material/Material.wxml-->
+<header-return title="修改我的个人资料"></header-return>
+
+<view class="form-section">
+  <view class="form-item avatar-section">
+    <text class="label">头像</text>
+    <image class="avatar" src="{{avatarUrl}}" bindtap="onChooseAvatar" />
+  </view>
+
+  <view class="form-item">
+    <text class="label">昵称</text>
+    <input class="input" value="{{username}}" bindinput="onUsernameInput" placeholder="请输入昵称" />
+  </view>
+
+  <view class="form-item">
+    <text class="label">职位</text>
+    <input class="input" value="{{position}}" bindinput="onPositionInput" placeholder="请输入职位" />
+  </view>
+
+  <button class="submit-button" bindtap="onSubmit">保存</button>
+</view>

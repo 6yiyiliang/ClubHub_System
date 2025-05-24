@@ -1,0 +1,7 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+  <image class="logo" src="/pages/icon/logo.jpg" mode="widthFix"></image>
+  <text class="welcome">欢迎登录</text>
+  <button class="login-btn" open-type="getUserInfo" bindtap="onLogin" style="width: 456rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 0rpx">微信账号登录</button>
+  <text class="agree">登录表示您同意《用户协议》和《隐私政策》</text>
+</view>

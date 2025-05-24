@@ -1,0 +1,27 @@
+<!--pages/q/q.wxml-->
+<header-return title="青年志愿者协会"></header-return>
+
+<view class="message-container">
+  <view class="message">
+    <image class="avatar" src="../../pages/icon/Sort/q.jpg"></image>
+    <view class="message-content">
+      <text class="sender" style="position: relative; left: 8rpx; top: 20rpx">青年志愿者协会</text>
+    </view>
+  </view>
+</view>
+
+<view class="text-container">
+    <view class="p-container">
+        社团介绍
+    </view>
+    <view class="q">青年志愿者协会简介</view>
+    <view class="content-text"> <!-- 新增一个类名用于正文部分 -->
+        珠海科技学院青年志愿者协会（以下简称“校青协”）是校团委指导下的校级学生组织之一。
+        协会践行“奉献、互助、有爱、进步”的志愿服务精神，秉承“尽己所能、不计报酬、帮助他人、服务社会”的志愿服务宗旨。
+        是一个致力于开展校内外志愿服务活动，宣传志愿服务精神的组织。
+        校青协是由主席团及秘书处、媒体宣传部、项目管理部、公益实践部、紫荆服务队、牵手服务队、常青服务队组成。
+        各部门互敬互爱、共同进步，一起在激扬青春、开拓人生、奉献社会的进程中接续奋斗，
+        书写无愧于时代的青春篇章！
+    </view>
+    <image class="photo" src="../../pages/icon/slide/three_1.jpg" mode=""/>
+</view>

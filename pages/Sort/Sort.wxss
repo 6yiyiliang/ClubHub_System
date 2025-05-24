@@ -1,0 +1,73 @@
+/* pages/Sort/Sort.wxss */
+page {
+    background-color: #f5f5f5; /* 浅灰色背景 */
+    height: 100%;
+    width: 100%;
+}
+.message-container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    width: 95%;
+    min-height: 60px; /* 让容器至少有一定的高度 */
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px; /* 纠正rpx为px */
+    
+    /* 让容器在父级容器中水平居中 */
+    margin: 0 auto;
+}
+.message-container-2 {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    width: 95%;
+    min-height: 60px; /* 让容器至少有一定的高度 */
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px; /* 纠正rpx为px */
+    
+    /* 让容器在父级容器中水平居中 */
+    margin: 0 auto;
+}
+.message-container-3 {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    width: 95%;
+    min-height: 60px; /* 让容器至少有一定的高度 */
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px; /* 纠正rpx为px */
+    margin: 0 auto;
+}
+.message {
+    display: flex;
+    align-items: flex-start; /* 头像和内容顶部对齐 */
+    margin-bottom: 10px;
+    width: 620rpx;
+    padding-bottom: 6px;
+    margin-top: 15px; /* 增加上边距，让元素下移 */
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.message-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.sender {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 36rpx;
+    color: rgb(94, 94, 94);
+}
+.time {
+    font-size: 12px;
+    color: #888;
+    margin-left: auto;
+    margin-top: -15px;
+}
+.content {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}

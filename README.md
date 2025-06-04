@@ -50,6 +50,11 @@ ClubHub_System/
 └── README.md
 ```
 
+## 申优答辩视频
+
+- https://www.bilibili.com/video/BV1upEszJEQt/?spm_id_from=333.337.search-card.all.click
+
+
 ## 页面运行效果
 
 - ![登录界面](images/login.png)

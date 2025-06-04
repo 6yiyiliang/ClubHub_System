@@ -52,7 +52,7 @@ ClubHub_System/
 
 ## 申优答辩视频
 
-- https://www.bilibili.com/video/BV1upEszJEQt/?spm_id_from=333.337.search-card.all.click
+- https://www.bilibili.com/video/BV1Au7BzkEDS/?spm_id_from=333.1387.homepage.video_card.click&vd_source=721d135677558d3b69e4c5243d8f4384
 
 
 ## 页面运行效果
